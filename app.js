@@ -5,7 +5,7 @@ const swaggerSpec = require('./config/swagger');
 
 const app = express()
 app.use(cors({
-  origin:'http://localhost:5173'
+  origin:['http://localhost:5173',"https://backend-10xers.onrender.com"]
 }))
 const authRoutes = require('./routes/auth.route')
 const productRoutes = require('./routes/product.route')
